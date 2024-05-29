@@ -1,0 +1,290 @@
+; vim: ft=colortemplate fdm=marker cc=27,43,59
+
+; About {{{
+
+;    +-------------------------+
+;    |                         |
+;    |   |  .  _|  _    _ |    |
+;    |   |_ | (_| (_|_ |  |<   |
+;    |                         |
+;    +-------------------------+
+
+; Version: 24.06-beta
+; Concept: 2010's modern, little vivid, dark kawaii colorscheme
+; Colors:: base -> darkgray, main -> lightblue, accent -> pink
+; }}}
+
+; Information {{{
+Full name:   Lidark
+Short name:  lidark
+Author:      Hikali
+Website:     https://git.47041.net/lidark
+Description: Lidark is lightblue and pink colorscheme
+License:     MIT
+;}}}
+
+; Color definitions {{{
+Background: dark
+Variant: gui 256 16
+
+; Basic color definitions {{{
+;      name               GUI             Base256         Base16
+Color: black              #31363b         237             Black
+Color: red                #c6344a         161             DarkRed
+Color: green              #00c944         035             DarkGreen
+Color: yellow             #f15a22         202             DarkYellow
+Color: blue               #1793d1         032             DarkBlue
+Color: magenta            #a460c7         134             DarkMagenta
+Color: cyan               #04bac5         037             DarkCyan
+Color: white              #bdc3c7         251             LightGray
+Color: brightblack        #6b757f         244             DarkGray
+Color: brightred          #e974a3         205             LightRed
+Color: brightgreen        #2cde85         042             LightGreen
+Color: brightyellow       #ffac33         215             LightYellow
+Color: brightblue         #3daee9         039             LightBlue
+Color: brightmagenta      #bb77ff         141             LightMagenta
+Color: brightcyan         #99d9e8         117             LightCyan
+Color: brightwhite        #eff0f1         255             White
+; }}}
+; Advanced color defenitions {{{
+;      name               GUI             Base256         Base16
+Color: altblack           #232629         235             black
+Color: altred             #de565d         197             darkred
+Color: altgreen           #719347         064             darkgreen
+Color: altyellow          #ffcc4d         220             darkyellow
+Color: altblue            #4c7de3         068             darkblue
+Color: altmagenta         #a05b7d         132             darkmagenta
+Color: altcyan            #64e9db         080             darkcyan
+Color: altwhite           #a7b1ba         250             lightgray
+Color: faintblack         #3b4045         238             darkgray
+Color: faintred           #fea3c4         218             lightred
+Color: faintgreen         #b4de69         149             lightgreen
+Color: faintyellow        #ffe794         222             lightyellow
+Color: faintblue          #5dadec         075             lightblue
+Color: faintmagenta       #8e6ae8         105             lightmagenta
+Color: faintcyan          #76a1ac         109             lightcyan
+Color: faintwhite         #fcfcfc         231             white
+; }}}
+
+; Set Term colors {{{
+Term colors: black red green yellow blue magenta cyan white
+Term colors: brightblack brightred brightgreen brightyellow
+Term colors: brightblue brightmagenta brightcyan brightwhite
+; }}}
+; }}}
+
+; Highlight definitions {{{
+; Highlighting groups for various occasions {{{
+; Group                   Foreground      Background      Attributes
+
+; - normal {{{
+Normal                    brightwhite     altblack
+Terminal -> Normal
+; }}}
+
+; - defined group {{{
+SelectedElement           brightwhite     brightblue
+; }}}
+
+ColorColumn -> CursorColumn
+VertSplit                 faintblack      black
+
+; - cursor {{{
+Cursor                    black           brightwhite
+CursorIM                  faintblack      brightwhite
+CursorLine                none            black
+CursorLineFold -> LineNr          ;brightblack     black
+CursorLineNr              brightwhite     black
+CursorLineSign -> CursorLine ;LineNr
+CursorColumn -> CursorLine
+MatchParen -> SelectedElement
+; }}}
+
+; - diff {{{
+DiffAdd                   brightwhite     altgreen
+DiffChange                white           brightblack
+DiffDelete                faintred        altmagenta
+DiffText                  brightwhite     faintcyan
+; }}}
+
+; - fold {{{
+Folded                    white           black
+FoldColumn -> LineNr
+SignColumn -> LineNr
+; }}}
+
+; - line {{{
+LineNr                    brightblack     none
+LineNrAbove -> LineNr
+LineNrBelow -> LineNr
+EndOfBuffer -> LineNr
+; }}}
+
+; - message {{{
+ErrorMsg                  brightwhite     red
+WarningMsg                yellow          none
+ModeMsg                   brightwhite     none 
+MoreMsg                   brightcyan      none
+Question                  brightgreen     none
+; }}}
+
+; - search {{{
+Search                    black           brightyellow
+CurSearch                 black           brightwhite
+IncSearch                 black           white
+QuickFixLine              omit            none
+; }}}
+
+; - pmenu {{{
+Pmenu                     brightwhite     black
+PmenuSbar -> Pmenu
+PmenuSel -> SelectedElement
+PmenuThumb                none            brightwhite
+; }}}
+
+; - statusline {{{
+StatusLine                brightwhite     black
+StatusLineNC              white           faintblack
+WildMenu -> SelectedElement
+StatusLineTerm -> StatusLine
+StatusLineTermNC -> StatusLineNC
+; }}}
+
+; - tabline {{{
+TabLine                   white           faintblack
+TabLineFill               none            black
+TabLineSel -> SelectedElement
+; }}}
+
+; - special_text {{{
+Title                     brightwhite     none
+SpecialKey                brightred       none            standout
+Conceal                   none            none
+Ignore                    white           none
+NonText                   brightblack     none
+Directory                 brightblue      none
+; }}}
+;
+; - spell {{{
+Variant: 16
+SpellBad                  brightred       black           underline standout
+SpellCap                  brightblue      black           underline standout
+SpellLocal                brightgreen     black           underline standout
+SpellRare                 brightmagenta   black           underline standout
+
+Variant: 256 gui
+SpellBad                  none            none            undercurl guisp=faintred
+SpellCap                  none            none            undercurl guisp=faintblue
+SpellLocal                none            none            undercurl guisp=faintgreen
+SpellRare                 none            none            undercurl guisp=faintmagenta
+
+Variant: gui 256 16
+; }}}
+
+; - toolbar {{{
+ToolbarButton             brightwhite     faintblack
+ToolbarLine               brightwhite     black
+; ToolbarLinenone              white
+; }}}
+
+; - visual {{{
+; Visual                    brightwhite     brightred
+Visual -> SelectedElement
+VisualNOS                 brightwhite     brightblack
+; }}}
+
+; }}}
+
+; ------------------------ --------------- --------------- ----------
+; Other conventional group names (see `:help group-name`)
+; Group                   Foreground      Background      Attributes
+
+; - difftxt {{{
+Added                     brightgreen     none 
+Changed                   brightcyan      none
+Removed                   brightred       none
+; }}}
+
+; *Comment -> コメント
+Comment                   brightblack     none
+
+; *Constant  -> 定数
+;  String    -> 文字列定数: "これは文字列です"
+;  Character -> 文字定数: 'c', '\n'
+;  Number    -> 数値定数: 234, 0xff
+;  Boolean   -> ブール値の定数: TRUE, false
+;  Float     -> 浮動小数点数の定数: 2.3e10
+Constant                  yellow          none
+String                    brightgreen     none
+Character -> String
+
+; *Identifier -> 変数名
+;  Function   -> 関数名(クラスメソッドを含む)
+Identifier                brightblue      none
+
+; *Statement   -> 命令文
+;  Conditional -> if, then, else, endif, switch, その他
+;  Repeat      -> for, do, while, その他
+;  Label       -> case, default, その他
+;  Operator    -> "sizeof", "+", "*", その他
+;  Keyword     -> その他のキーワード
+;  Exception   -> try, catch, throw
+Statement                 blue            none
+
+; *PreProc   -> 一般的なプリプロセッサー命令
+;  Include   -> #include プリプロセッサー
+;  Define    -> #define プリプロセッサー
+;  Macro     -> Defineと同値
+;  PreCondit -> プリプロセッサーの #if, #else, #endif, その他
+PreProc                   brightmagenta   none
+
+; *Type         -> int, long, char, その他
+;  StorageClass -> static, register, volatile, その他
+;  Structure    -> struct, union, enum, その他
+;  Typedef      -> typedef宣言
+Type                      brightyellow    none
+
+
+; *Special       -> 特殊なシンボル
+; SpecialChar    -> 特殊な文字定数
+; Tag            -> この上で CTRL-] を使うことができる
+; Delimiter      -> 注意が必要な文字
+; SpecialComment -> コメント内の特記事項
+; Debug          -> デバッグ命令
+Special                   cyan            none
+
+debugPC -> Special
+debugBreakpoint -> Special
+
+; *Todo -> 特別な注意が必要なもの; 大抵は TODO FIXME XXX などのキーワード
+Todo                      none            brightblue
+; Todo                      none            brightred
+
+; *Underlined -> 目立つ文章, HTMLリンク
+Underlined                none            none            underline
+
+; *Ignore -> (見た目上)空白, 不可視  |hl-Ignore|
+
+; *Error -> エラーなど、なんらかの誤った構造
+Error                     brightwhite     red
+
+
+
+
+; TwoByteSpace        none      red
+; }}}
+
+; Plugin colorscheme {{{
+; vim-hilightedyank {{{
+HighlightedyankRegion     none            none            reverse underdashed
+; }}}
+; changesPlugin {{{
+ChangesSignTextAdd -> Added
+ChangesSignTextCh  -> Changed
+ChangesSignTextDel -> Removed
+; }}}
+ ; Traces {{{
+TracesSearch  -> Search
+TracesReplace -> IncSearch
+;; }}}
+; }}}
