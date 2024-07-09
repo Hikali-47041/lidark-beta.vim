@@ -9,7 +9,7 @@
 ;    |                         |
 ;    +-------------------------+
 
-; Version: 24.06-beta
+; Version: 24.07-beta
 ; Concept: 2010's modern, little vivid, dark kawaii colorscheme
 ; Colors:: base -> darkgray, main -> lightblue, accent -> pink
 ; }}}
@@ -18,7 +18,7 @@
 Full name:   Lidark
 Short name:  lidark
 Author:      Hikali
-Website:     https://git.47041.net/lidark
+Website:     https://github.com/Hikali-47041/lidark-beta
 Description: Lidark is lightblue and pink colorscheme
 License:     MIT
 ;}}}
@@ -103,7 +103,7 @@ MatchParen -> SelectedElement
 ; - diff {{{
 DiffAdd                   brightwhite     altgreen
 DiffChange                white           brightblack
-DiffDelete                faintred        altmagenta
+DiffDelete                altmagenta      none
 DiffText                  brightwhite     faintcyan
 ; }}}
 
