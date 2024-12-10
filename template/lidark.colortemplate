@@ -2,17 +2,18 @@
 
 ; About {{{
 
-;    +-------------------------+
-;    |                         |
-;    |   |  .  _|  _    _ |    |
-;    |   |_ | (_| (_|_ |  |<   |
-;    |                         |
-;    +-------------------------+
+;    +-------------------------------------------------------------+
+;    |                                                     _       |
+;    |   |  -  _|  _    _ |     /   >     <   |_| - |   _   | _-   |
+;    |   |_ | (_| (_|_ |  |<   /   "   ^   "  | | | |< (_|_ |_ |_  |
+;    |                                                             |
+;    +-------------------------------------------------------------+
 
-; Version: 24.07-beta
+; Version: 25.03
 ; Concept: 2010's modern, little vivid, dark kawaii colorscheme
 ; Colors:: base -> darkgray, main -> lightblue, accent -> pink
 ; }}}
+;
 
 ; Information {{{
 Full name:   Lidark
@@ -50,8 +51,8 @@ Color: brightwhite        #eff0f1         255             White
 ;      name               GUI             Base256         Base16
 Color: altblack           #232629         235             black
 Color: altred             #de565d         197             darkred
-Color: altgreen           #719347         064             darkgreen
-Color: altyellow          #ffcc4d         220             darkyellow
+Color: altgreen           #71a144         064             darkgreen
+Color: altyellow          #ffdb3b         220             darkyellow
 Color: altblue            #4c7de3         068             darkblue
 Color: altmagenta         #a05b7d         132             darkmagenta
 Color: altcyan            #64e9db         080             darkcyan
@@ -60,7 +61,7 @@ Color: faintblack         #3b4045         238             darkgray
 Color: faintred           #fea3c4         218             lightred
 Color: faintgreen         #b4de69         149             lightgreen
 Color: faintyellow        #ffe794         222             lightyellow
-Color: faintblue          #5dadec         075             lightblue
+Color: faintblue          #37c7ef         045             lightblue
 Color: faintmagenta       #8e6ae8         105             lightmagenta
 Color: faintcyan          #76a1ac         109             lightcyan
 Color: faintwhite         #fcfcfc         231             white
