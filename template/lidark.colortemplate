@@ -124,7 +124,7 @@ EndOfBuffer -> LineNr
 ; - message {{{
 ErrorMsg                  brightwhite     red
 WarningMsg                yellow          none
-ModeMsg                   brightwhite     none 
+ModeMsg                   brightwhite     none
 MoreMsg                   brightcyan      none
 Question                  brightgreen     none
 ; }}}
@@ -258,8 +258,8 @@ debugPC -> Special
 debugBreakpoint -> Special
 
 ; *Todo -> 特別な注意が必要なもの; 大抵は TODO FIXME XXX などのキーワード
-Todo                      none            brightblue
-; Todo                      none            brightred
+Todo                      brightblack     none            underdashed guisp=faintblue
+;Todo                      none            faintblue      underdashed
 
 ; *Underlined -> 目立つ文章, HTMLリンク
 Underlined                none            none            underline

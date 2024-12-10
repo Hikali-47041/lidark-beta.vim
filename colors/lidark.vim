@@ -91,7 +91,7 @@ hi Type guifg=#ffac33 guibg=NONE gui=NONE cterm=NONE
 hi Special guifg=#04bac5 guibg=NONE gui=NONE cterm=NONE
 hi! link debugPC Special
 hi! link debugBreakpoint Special
-hi Todo guifg=NONE guibg=#3daee9 gui=NONE cterm=NONE
+hi Todo guifg=#6b757f guibg=NONE guisp=#37c7ef gui=underdashed cterm=underdashed
 hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
 hi Error guifg=#eff0f1 guibg=#c6344a gui=NONE cterm=NONE
 hi HighlightedyankRegion guifg=NONE guibg=NONE gui=reverse,underdashed ctermfg=NONE ctermbg=NONE cterm=reverse,underdashed
@@ -175,7 +175,7 @@ if s:t_Co >= 256
   hi Special ctermfg=37 ctermbg=NONE cterm=NONE
   hi! link debugPC Special
   hi! link debugBreakpoint Special
-  hi Todo ctermfg=NONE ctermbg=39 cterm=NONE
+  hi Todo ctermfg=244 ctermbg=NONE cterm=underdashed
   hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
   hi Error ctermfg=255 ctermbg=161 cterm=NONE
   hi HighlightedyankRegion ctermfg=NONE ctermbg=NONE cterm=reverse,underdashed
@@ -262,7 +262,7 @@ if s:t_Co >= 16
   hi Special ctermfg=DarkCyan ctermbg=NONE cterm=NONE
   hi! link debugPC Special
   hi! link debugBreakpoint Special
-  hi Todo ctermfg=NONE ctermbg=LightBlue cterm=NONE
+  hi Todo ctermfg=DarkGray ctermbg=NONE cterm=underdashed
   hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
   hi Error ctermfg=White ctermbg=DarkRed cterm=NONE
   hi HighlightedyankRegion ctermfg=NONE ctermbg=NONE cterm=reverse,underdashed
